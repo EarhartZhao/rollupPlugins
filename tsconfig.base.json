@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "lib": ["es2018"],
+    "target": "es2017",
+    "rootDir": "packages",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "pretty": true,
+    "allowJs": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

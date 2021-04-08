@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./build",
+    "rootDir": "./",
+    "declaration": true
+  },
+  "include": ["src","rollup.config.ts"]
+}

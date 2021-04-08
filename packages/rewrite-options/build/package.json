@@ -1,0 +1,32 @@
+{
+    "name": "rollup-plugin-rewrite-options",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "test": "ts-node src/test.ts",
+        "build": "npm run clean && tsc && rollup -c build/rollup.config.js",
+        "clean": "rimraf build dist"
+    },
+    "devDependencies": {
+        "@types/request": "^2.48.5",
+        "chalk": "^4.1.0",
+        "rimraf": "^3.0.2",
+        "rollup-plugin-dts": "^3.0.1"
+    },
+    "peerDependencies": {
+        "rollup": "^2.41.4",
+        "typescript": "^4.2.3"
+    },
+    "type": "module",
+    "exports": {
+        "import": "./dist/rollup-plugin-rewrite-options.mjs",
+        "require": "./dist/rollup-plugin-rewrite-options.cjs",
+        "types": "./dist/rollup-plugin-rewrite-options.d.ts"
+    },
+    "main": "./dist/rollup-plugin-rewrite-options.cjs",
+    "files": [
+        "dist"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "entry",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-rewrite-options": "^1.0.0"
+  }
+}
