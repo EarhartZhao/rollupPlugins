@@ -1,8 +1,9 @@
 {
   "name": "intercept-axios",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Intercept axios requests, achieve request throttling",
   "author": "EarhartZhao",
+  "email" : "earhart@vip.qq.com",
   "license": "ISC",
   "scripts": {
     "test": "ts-node src/test.ts",
@@ -18,6 +19,7 @@
     "rollup": "^2.41.4",
     "typescript": "^4.2.3"
   },
+  "homepage":"https://github.com/EarhartZhao/rollupPlugins/tree/main/packages/intercept-axios",
   "type": "module",
   "exports": {
     "import": "./dist/index.mjs",

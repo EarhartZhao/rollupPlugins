@@ -4,19 +4,17 @@
 ### 拦截axios请求，以最小的破坏实现请求节流并缓存 | Intercept axios requests, achieve request throttling and cache with minimal damage
 
 ### 安装 | Install
-`
-npm i intercept-axios -D
-`
+`npm i intercept-axios -D`
 
 ### 配置 | Options
-`
+```
   throttle?: number,                //是否开启节流，单位ms， 默认500ms
   isSameProps?: boolean,             //props 是否作为判断相同请求的依据
   isSaveResponseData?: boolean,     //是否缓存数据， 默认开启
-`
+```
 
 ### 使用 | Use
-`
+```
 import interceptAxios from 'intercept-axios'
 import axios from 'axios'
 
@@ -53,5 +51,4 @@ axios.interceptors.response.use(
 );
 
 export { axios };
-`
-
+```
