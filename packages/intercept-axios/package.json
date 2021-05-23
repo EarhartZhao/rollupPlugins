@@ -1,0 +1,31 @@
+{
+  "name": "intercept-axios",
+  "version": "1.0.0",
+  "description": "",
+  "author": "EarhartZhao",
+  "license": "ISC",
+  "scripts": {
+    "test": "ts-node src/test.ts",
+    "build": "npm run clean && tsc && rollup -c build/rollup.config.js",
+    "clean": "rimraf build dist"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-dts": "^3.0.1"
+  },
+  "peerDependencies": {
+    "rollup": "^2.41.4",
+    "typescript": "^4.2.3"
+  },
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts"
+  },
+  "main": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ]
+}

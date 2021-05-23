@@ -17,5 +17,11 @@
     "rollup": "^2.41.4",
     "typescript": "^4.2.3"
   },
-  "workspaces": ["rollup-plugin-rewrite-options"]
+  "workspaces": [
+    "rollup-plugin-rewrite-options",
+    "intercept-axios"
+  ],
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
