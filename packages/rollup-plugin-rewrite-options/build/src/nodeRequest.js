@@ -32,6 +32,6 @@ export default function rewriteOptions(options) {
         rewriteCfg(path.resolve(dirname, dir), res);
     })
         .catch((e) => {
-        console.log(chalk.red("请求 " + url + " 发生错误！"));
+        console.log(chalk.red("[rollup-plugin-rewrite-options]:请求 " + url + " 发生错误！"));
     });
 }
