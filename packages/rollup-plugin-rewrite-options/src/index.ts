@@ -8,7 +8,7 @@ export interface Options {
 
 const plugin: PluginImpl<Options> = (options = {}) => {
   return {
-    name: "rewrite-options",
+    name: "rewrite-options-rewrite-options",
     writeBundle() {
       nodeRequest(options);
     },
