@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Intercept axios requests, achieve request throttling",
   "author": "EarhartZhao",
-  "email" : "earhart@vip.qq.com",
+  "email": "earhart@vip.qq.com",
   "license": "ISC",
   "scripts": {
     "test": "ts-node src/test.ts",
@@ -13,13 +13,14 @@
   "devDependencies": {
     "chalk": "^4.1.0",
     "rimraf": "^3.0.2",
+    "rollup": "^2.41.4",
     "rollup-plugin-dts": "^3.0.1",
-    "rollup": "^2.41.4"
-  },
-  "peerDependencies": {
     "typescript": "^4.1.2"
   },
-  "homepage":"https://github.com/EarhartZhao/rollupPlugins/tree/main/packages/intercept-axios",
+  "peerDependencies": {
+    "rollup": "^1.20.0||^2.0.0"
+  },
+  "homepage": "https://github.com/EarhartZhao/rollupPlugins/tree/main/packages/intercept-axios",
   "type": "module",
   "exports": {
     "import": "./dist/index.mjs",
@@ -28,6 +29,7 @@
   },
   "main": "./dist/index.mjs",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ]
 }
